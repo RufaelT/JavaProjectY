@@ -1,3 +1,5 @@
+package com.gebeya.app.models;
+
 public class Home {
     private int homeId;
     private String homeTitle;

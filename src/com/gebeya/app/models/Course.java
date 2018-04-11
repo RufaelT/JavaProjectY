@@ -1,3 +1,5 @@
+package com.gebeya.app.models;
+
 public class Course {
     private int courseId;
     private String courseCode;

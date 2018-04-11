@@ -1,4 +1,7 @@
-import  java.util.Date;
+package com.gebeya.app.models;
+
+import java.util.Date;
+
 public class Project {
     private int projectId;
     private String projectCode;
