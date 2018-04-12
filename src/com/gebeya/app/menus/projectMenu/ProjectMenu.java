@@ -8,6 +8,7 @@ public class ProjectMenu extends Menu {
         setTitle("Welcome To Project");
         addMenuItems(1,"1. HRMS");
         addMenuItems(2, "2. PMS");
+        addMenuItems(3, "3. Exit");
         addMenuItems(0,"Back");
     }
 

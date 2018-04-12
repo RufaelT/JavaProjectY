@@ -10,7 +10,7 @@ public class MenuItem  {
     }
     public void showMenuItem()
     {
-        System.out.println("Choice : " + choiceNo + "Description : " + description);
+        System.out.println(" Choice : " + choiceNo + " Description : " + description);
     }
 
     public int getChoiceNo() {

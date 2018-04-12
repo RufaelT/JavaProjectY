@@ -1,5 +1,9 @@
 package com.gebeya.app.menus.baseMenu;
 
+import com.gebeya.app.menus.HomeMenu.HomeMenu;
+import com.gebeya.app.menus.courseMenu.CourseMenu;
+import com.gebeya.app.menus.projectMenu.ProjectMenu;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -33,12 +37,28 @@ public class Menu {
             System.out.println(">: ");
             choice= keyboard.nextInt();
 
-        } while (isValidChoice(choice));
+        } while (!isValidChoice(choice));
         selectChoice(choice);
     }
     public void selectChoice(int choice)
     {
-       //se
+       switch (choice)
+        {
+            case 1: (new CourseMenu()).start();
+            break;
+            case 2:(new ProjectMenu()).start();
+            break;
+            case 3 :
+                break;
+            case 0: repeatChoice();
+            break;
+            default: System.out.println("Wrong input");
+            break;
+        }
+    }
+    public void repeatChoice()
+    {
+        (new HomeMenu()).start();
     }
     public boolean isValidChoice(int choice) {
         for (int i = 0; i < menuItems.size(); i++) {

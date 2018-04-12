@@ -8,6 +8,7 @@ public class HomeMenu extends Menu {
         setTitle("Welcome To Home");
         addMenuItems(1,"1. Course");
         addMenuItems(2, "2. Project");
+        addMenuItems(3, "3. Exit");
         addMenuItems(0,"Back");
     }
 }
