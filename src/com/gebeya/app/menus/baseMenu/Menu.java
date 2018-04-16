@@ -1,5 +1,7 @@
 package com.gebeya.app.menus.baseMenu;
 
+import com.gebeya.app.controllers.CourseController;
+import com.gebeya.app.controllers.ProjectController;
 import com.gebeya.app.menus.HomeMenu.HomeMenu;
 import com.gebeya.app.menus.courseMenu.CourseMenu;
 import com.gebeya.app.menus.projectMenu.ProjectMenu;
@@ -34,7 +36,7 @@ public class Menu {
         showMenu();
         Scanner keyboard=new Scanner(System.in);
         do {
-            System.out.println(">: ");
+            System.out.print(">: ");
             choice= keyboard.nextInt();
 
         } while (!isValidChoice(choice));
@@ -49,6 +51,18 @@ public class Menu {
             case 2:(new ProjectMenu()).start();
             break;
             case 3 :
+                break;
+            case 4:
+                (new CourseController()).DisplayItem(1);
+                break;
+            case 5:
+                (new CourseController()).DisplayItem(1);
+                break;
+            case 6:
+                (new ProjectController()).DisplayItem(1);
+                break;
+            case 7:
+                (new ProjectController()).DisplayItem(1);
                 break;
             case 0: repeatChoice();
             break;

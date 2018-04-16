@@ -6,8 +6,8 @@ public class CourseMenu extends Menu {
     public CourseMenu() {
         super();
         setTitle("Welcome To Course");
-        addMenuItems(1,"1. Java");
-        addMenuItems(2, "2. C#");
+        addMenuItems(4,"4. Java");
+        addMenuItems(5, "5. C#");
         addMenuItems(3, "3. Exit");
         addMenuItems(0,"Back");
     }

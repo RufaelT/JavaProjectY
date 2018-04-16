@@ -6,8 +6,8 @@ public class ProjectMenu extends Menu {
     public ProjectMenu() {
         super();
         setTitle("Welcome To Project");
-        addMenuItems(1,"1. HRMS");
-        addMenuItems(2, "2. PMS");
+        addMenuItems(6,"6. HRMS");
+        addMenuItems(7, "7. PMS");
         addMenuItems(3, "3. Exit");
         addMenuItems(0,"Back");
     }

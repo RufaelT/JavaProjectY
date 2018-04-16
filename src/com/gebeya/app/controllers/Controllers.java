@@ -1,4 +1,6 @@
 package com.gebeya.app.controllers;
 
-public class Controllers {
+public interface Controllers {
+    public void DisplayItem(int id);
+
 }
